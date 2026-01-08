@@ -64,36 +64,7 @@ export const InternshipCard = ({ internship, onViewDetails }: InternshipCardProp
           </div>
         </div>
 
-        {/* Details */}
-        <div className="space-y-2 text-sm">
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <Clock className="h-4 w-4 text-primary" />
-            <span>{internship.duration}</span>
-          </div>
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <MapPin className="h-4 w-4 text-primary" />
-            <span>{internship.location}</span>
-          </div>
-          {internship.deadline && (
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Calendar className="h-4 w-4 text-primary" />
-              <span>Apply by: {new Date(internship.deadline).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-            </div>
-          )}
-          {internship.stipend && (
-            <div className="flex items-center gap-2 text-muted-foreground font-semibold">
-              <IndianRupee className="h-4 w-4 text-primary" />
-              <span>{typeof internship.stipend === 'number' ? `₹${internship.stipend}/month` : internship.stipend}</span>
-            </div>
-          )}
-          {seatsInfo && (
-            <div className="flex items-center gap-2 text-muted-foreground text-xs">
-              <span className={isLocked ? 'text-red-500 font-semibold' : ''}>
-                {seatsInfo} {isLocked ? '(Full)' : 'available'}
-              </span>
-            </div>
-          )}
-        </div>
+        
 
         {/* Description */}
         <p className="text-sm text-muted-foreground line-clamp-3">
