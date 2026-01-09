@@ -18,7 +18,31 @@ export const Footer = () => {
           </div>
 
           {/* Quick Links */}
-         
+          <div>
+            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/" className="hover:text-primary transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/internships" className="hover:text-primary transition-colors">
+                  Internships
+                </Link>
+              </li>
+              <li>
+                <Link to="/application-guide" className="hover:text-primary transition-colors">
+                  Application Guide
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" className="hover:text-primary transition-colors">
+                  Projects
+                </Link>
+              </li>
+            </ul>
+          </div>
 
           {/* Departments */}
           <div>
