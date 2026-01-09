@@ -7,7 +7,15 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About */}
-         
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <Building2 className="h-6 w-6 text-primary" />
+              <span className="font-bold text-lg">CCL Ranchi</span>
+            </div>
+            <p className="text-sm text-secondary-foreground/80">
+              Central Coalfields Limited - Empowering future mining professionals through quality internship programs.
+            </p>
+          </div>
 
           {/* Quick Links */}
           <div>
