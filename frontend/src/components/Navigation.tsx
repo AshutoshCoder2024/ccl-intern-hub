@@ -50,7 +50,22 @@ export const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          
+          <div className="hidden md:flex items-center gap-1">
+            {navItems.map((item) => (
+              <Link key={item.path} to={item.path}>
+                <Button
+                  variant="ghost"
+                  className={cn(
+                    "transition-all duration-200",
+                    isActive(item.path) &&
+                      "bg-accent text-accent-foreground font-semibold"
+                  )}
+                >
+                  {item.label}
+                </Button>
+              </Link>
+            ))}
+          </div>
 
           {/* Desktop Action Buttons */}
           <div className="hidden md:flex items-center gap-2">
